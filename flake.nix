@@ -7,6 +7,8 @@
     blueprint.url = "github:numtide/blueprint";
     blueprint.inputs.nixpkgs.follows = "nixpkgs";
     beads.url = "github:gastownhall/beads?ref=v1.0.2";
+    substack-cli.url = "github:LiGoldragon/substack-cli";
+    substack-cli.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   # Load the blueprint
