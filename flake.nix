@@ -6,7 +6,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
     blueprint.url = "github:numtide/blueprint";
     blueprint.inputs.nixpkgs.follows = "nixpkgs";
-    beads.url = "github:gastownhall/beads";
+    beads.url = "github:gastownhall/beads?ref=v1.0.2";
   };
 
   # Load the blueprint
