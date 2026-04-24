@@ -8,14 +8,14 @@ let
   # https://github.com/iosifache/annas-mcp. When the PR merges and
   # a release is cut, flip owner back to `iosifache` and rev to a
   # release tag.
-  annas-mcp = pkgs.buildGoModule rec {
+  annas-mcp = pkgs.buildGoModule {
     pname = "annas-mcp";
     version = "0.0.5-stall-timeout";
     src = pkgs.fetchFromGitHub {
       owner = "LiGoldragon";
       repo = "annas-mcp";
-      rev = "f86865414eae169923397acbb81a4d870175ed51";
-      hash = "sha256-KNUgYeOGngo9TkEXQMnhCFu5QkA8Gthwk+mfYf4KSZo=";
+      rev = "285fd4c6668fb048db512698c9dd3bc154657b47";
+      hash = "sha256-H9nwpZuuP7Ii2LLYvEkJE6ww+PKqWuYBE793/q6NX6M=";
     };
     vendorHash = "sha256-2NdG5p2XfrhVgi388dRDBUSGwg6ybnzfn9495TWNGsA=";
     subPackages = [ "cmd/annas-mcp" ];
